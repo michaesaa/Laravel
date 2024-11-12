@@ -34,7 +34,7 @@ class PriductController extends Controller
             'description' => 'required',
             'price' => 'required|numeric',
         ]);
-        //estamos llamandado al modelo
+        
         $product = new Priduct();
         $product->name = $request->name;
         $product->description = $request->description;

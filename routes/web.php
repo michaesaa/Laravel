@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 // crud productos 
 
-
+// Route::middleware('auth','admin')->group(function () {
 
 Route::get('/products', [PriductController::class, 'index'])->name('product.index');
     
@@ -27,7 +27,7 @@ Route::patch('/products/{product}/update', [PriductController::class, 'update'])
 Route::get('/products/{product}/edit', [PriductController::class, 'edit'])->name('priduct.edit');
 
 Route::delete('/products/{product}/delete', [PriductController::class, 'destroy'])->name('priduct.destroy');
-
+// });
 
 // login
 Route::get('/dashboard', function () {
