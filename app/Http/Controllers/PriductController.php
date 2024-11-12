@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\Priduct;
 class PriductController extends Controller
 {
+
+    // public function __construct()
+    // {
+       
+    //     $this->middleware('auth')->only(['create', 'store', 'edit', 'update', 'destroy']);
+    // }
+
  
     public function index()
     {
